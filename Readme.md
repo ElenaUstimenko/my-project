@@ -1,10 +1,14 @@
-# **React + TypeScript**  
+[![Обложка «my-project»](./src/images/photo.jpg)]
+
+
+
+# **my-project by React + TypeScript**  
 
 
 ---
 
 
-Отработка тем из списка ниже, с подробными комментариями.
+В проекте использован весь перечисленный ниже стек.
 
 
 ---
@@ -13,45 +17,49 @@
 ```Настройка окружения:```
 
 
-✔️ настройка Webpack для TypeScript =>_ ```ветка Webpack-TypeScript```
+✔️ настройка Webpack для TypeScript
 
 
-✔️ декомпозиция Webpack-конфига + DevServer для Webpack =>_ ```ветка Webpack-config--DevServer```
+✔️ декомпозиция Webpack-конфига + DevServer для Webpack 
 
 
-✔️ подключение React + настройка CSS/SCSS + подключение CSS Modules => ```ветка React-SCSS```
+✔️ подключение React + настройка CSS/SCSS + подключение CSS Modules 
 
 
-✔️ маршрутизация (вкл. React.lazy) => ```ветка маршрутизация```
+✔️ маршрутизация (вкл. React.lazy) 
 
 
-✔️ настройка смены темы => ```ветка theme```
+✔️ настройка смены темы 
 
 
-✔️ classnames + alias + AppRouter => ```ветка classnames-alias```
+✔️ classnames + alias + AppRouter 
 
 
-✔️ Components: Navbar, AppButton => ```ветка navbar-AppButton```
+✔️ Components: Navbar, AppButton 
 
 
-✔️ ThemeSwitcher, svg-loader, file-loader => ```ветка theme-switcher```
-
-
+✔️ ThemeSwitcher, svg-loader, file-loader 
 
 
 ```Линтеры, Тестирование, API:```
 
 
-✔️ Интернационализация, Sidebar, ESLint, Stylelint => ```ветка i18n_sidebar_eslint_stylelint```
+✔️ Интернационализация, Sidebar, ESLint, Stylelint 
 
 
-✔️ Jest, Loader для страницы, Обработка ошибок => ```ветка jest```
+✔️ Jest, Loader для страницы, Обработка ошибок 
 
 
-✔️ React Testing Library => ```ветка react-testing-library```
+✔️ React Testing Library 
 
 
-✔️ Storybook => ```ветка storybook```
+✔️ Storybook 
+
+
+---
+
+
+```что будет добавлено:```
 
 
 _CI/CD_
