@@ -1,4 +1,4 @@
-[![Обложка «my-project»](./src/images/photo.jpg)]
+![Image alt](./src/images/photo.jpg)
 
 
 
@@ -59,7 +59,7 @@
 ---
 
 
-```что будет добавлено:```
+```что будет добавлено ещё:```
 
 
 _CI/CD_
