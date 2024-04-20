@@ -20,37 +20,64 @@
 ✔️ настройка Webpack для TypeScript
 
 
-✔️ декомпозиция Webpack-конфига + DevServer для Webpack 
+✔️ DevServer для Webpack 
 
 
-✔️ подключение React + настройка CSS/SCSS + подключение CSS Modules 
+✔️ подключение React
 
 
-✔️ маршрутизация (вкл. React.lazy) 
+✔️ настройка CSS/SCSS
 
 
-✔️ настройка смены темы 
+✔️ подключение CSS Modules 
 
 
-✔️ classnames + alias + AppRouter 
+✔️ маршрутизация (включая React.lazy) 
 
 
-✔️ Components: Navbar, AppButton 
+✔️ настройка смены темы (ThemeSwitcher)
 
 
-✔️ ThemeSwitcher, svg-loader, file-loader 
+✔️ classnames
+
+
+✔️ alias 
+
+
+✔️ AppRouter 
+
+
+✔️ Components: Navbar
+
+
+✔️ Components: AppButton (может использоваться и как кнопка, и как ссылка)
+
+
+✔️ svg-loader, file-loader 
 
 
 ```Линтеры, Тестирование, API:```
 
 
-✔️ Интернационализация, Sidebar, ESLint, Stylelint 
+✔️ Интернационализация (ru / en)
 
 
-✔️ Jest, Loader для страницы, Обработка ошибок 
+✔️ Components: Sidebar
 
 
-✔️ React Testing Library 
+✔️ ESLint, Stylelint 
+
+
+✔️ Jest 
+
+
+✔️ Loader для страницы 
+
+
+✔️ Обработка ошибок  
+
+
+✔️ React Testing Library (на примере компонентов AppButton & Sidebar)
 
 
 ✔️ Storybook 
