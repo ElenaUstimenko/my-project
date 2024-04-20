@@ -1,4 +1,4 @@
-![Image alt](./src/images/photo.jpg)
+![Image alt](./src/images/main-image.jpg)
 
 
 
