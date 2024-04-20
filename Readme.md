@@ -1,4 +1,4 @@
-![Image alt](./src/images/main-image.jpg)
+![Image alt](./src/images/for-readme.jpg)
 
 
 
