@@ -1,4 +1,4 @@
-![Image alt](./src/images/for-readme.jpg)
+![Image alt](./src/images/forReadme.png)
 
 
 
@@ -59,7 +59,7 @@
 ```Линтеры, Тестирование, API:```
 
 
-✔️ Интернационализация (ru / en)
+✔️ Интернационализация (i18n)
 
 
 ✔️ Components: Sidebar
