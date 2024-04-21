@@ -1,4 +1,4 @@
-![Image alt](./src/images/forReadme.png)
+![Image alt](./src/images/for-readme.jpg)
 
 
 
@@ -86,7 +86,7 @@
 ---
 
 
-```что будет добавлено ещё:```
+```что будет добавлено ещё (в процессе):```
 
 
 _CI/CD_
