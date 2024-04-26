@@ -1,0 +1,155 @@
+@import '@styles/functions';
+@import '@styles/mixins';
+
+.AppButtonStateLayer {
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.AppButton {
+  font: var(--font-m);
+  font-family: var(--font-family-main);
+  text-align: center;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: fit-content;
+
+  // варианты стилей
+  &.text {
+    @include button-text(var(--text-primary));
+  }
+
+  &.text-contrast {
+    @include button-text(var(--text-contrast));
+  }
+
+  &.outlined {
+    @include button-outlined(var(--text-primary));
+  }
+
+  &.outlined-contrast {
+    @include button-outlined(var(--text-contrast));
+  }
+
+  &.contained {
+    @include button-contained(var(--bg-primary-surface), var(--text-primary-on-surface));
+  }
+
+  &.contained-contrast {
+    @include button-contained(var(--bg-contrast-surface), var(--text-contrast-on-surface));
+  }
+
+  &.disabled {
+    pointer-events: none;
+
+    &.text {
+      @include button-text-disabled(var(--bg-primary-disabled), var(--text-primary-hovered-disabled));
+    }
+
+    &.text-contrast {
+      @include button-text-disabled(var(--bg-contrast-disabled), var(--text-contrast-disabled));
+    }
+
+    &.outlined {
+      @include button-outlined-disabled(var(--bg-primary-disabled), var(--text-primary-disabled));
+    }
+
+    &.outlined-contrast {
+      @include button-outlined-disabled(var(--bg-contrast-disabled), var(--text-contrast-disabled));
+    }
+
+    &.contained {
+      @include  button-contained-disabled(var(--bg-primary-surface-disabled), var(--text-primary-on-surface-disabled));
+    }
+
+    &.contained-contrast {
+      @include  button-contained-disabled(var(--bg-contrast-surface-disabled), var(--text-contrast-on-surface-disabled));
+    }
+  }
+
+  &.hovered:hover {
+    &.text {
+      @include button-text-hovered(var(--bg-primary-hovered), var(--text-primary-hovered));
+    }
+
+    /*&.text-contrast {
+      @include button-text-hovered(var(--bg-contrast-hovered), var(--text-contrast-hovered));
+    }*/
+
+    &.outlined {
+      @include button-outlined-hovered(var(--bg-primary-hovered), var(--text-primary-hovered));
+    }
+
+    &.outlined-contrast {
+      @include button-outlined-hovered(var(--bg-contrast-hovered), var(--text-contrast-hovered));
+    }
+
+    &.contained {
+      @include button-contained-hovered(var(--bg-primary-surface-hovered), var(--text-primary-on-surface-hovered));
+    }
+
+    &.contained-contrast {
+      @include button-contained-hovered(var(--bg-contrast-surface-hovered), var(--text-contrast-on-surface-hovered));
+    }
+  }
+}
+
+.AppButtonContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: min-content min-content;
+  position: relative;
+  width: fit-content;
+  height: auto;
+  cursor: pointer;
+  z-index: 1;
+
+  .icon {
+    margin-right: spacing(0.5);
+    fill: var(--bg-primary);
+    transition: fill var(--transition-duration) var(--transition-timing-fn);
+
+    .selectedIcon {
+      fill: var(--bg-secondary);
+      transition: fill var(--transition-duration) var(--transition-timing-fn);
+    }
+  }
+}
+
+.Text {
+  width: max-content;
+
+  &.s {
+    padding: 0.25rem 0.5rem;
+  }
+
+  &.m {
+    padding: 0.5rem 1rem;
+  }
+
+  &.l {
+    padding: 1rem 2rem; /* 8px 16px */
+  }
+}
+
+.linkStyles {
+  text-decoration: none;
+}
+
+.isActive {
+  .icon {
+    fill: var(--bg-secondary);
+    transition: fill var(--transition-duration) var(--transition-timing-fn);
+  }
+
+  .text {
+    color: var(--text-secondary);
+    transition: all var(--transition-duration) var(--transition-timing-fn);
+  }
+}

@@ -1,0 +1,67 @@
+.light {
+  // Заголовки, ссылки
+  --color-text-accent-primary: rgba(var(--theme-dark), var(--transparency-87));
+  --color-text-accent-inverted: rgba(var(--theme-light), var(--transparency-87));
+
+  //  ------------------------------------ PRIMARY ------------------------------------
+
+  // Text
+  --text-primary: rgba(var(--theme-dark), var(--transparency-87));
+  --text-primary-hovered: rgba(var(--theme-dark), var(--transparency-75));
+  --text-primary-disabled: rgba(var(--theme-dark), var(--transparency-50));
+
+  // onSurface
+  --text-primary-on-surface: rgba(var(--theme-light), var(--transparency-87));
+  --text-primary-on-surface-hovered: rgba(var(--theme-light), var(--transparency-87));
+  --text-primary-on-surface-disabled: rgba(var(--theme-light), var(--transparency-50));
+
+  // Background
+  --bg-primary: rgba(var(--theme-light));
+  --bg-primary-hovered: rgba(var(--theme-light), var(--transparency-75));
+  --bg-primary-disabled: rgba(var(--theme-light), var(--transparency-50));
+
+  // surface
+  --bg-primary-surface: rgba(var(--theme-dark));
+  --bg-primary-surface-hovered: rgba(var(--theme-dark), var(--transparency-75));
+  --bg-primary-surface-disabled: rgba(var(--theme-dark), var(--transparency-50));
+
+  //  ------------------------------------ SECONDARY ------------------------------------
+
+  // Text
+  --text-secondary: rgb(var(--theme-color-secondary));
+  --text-secondary-hovered: rgba(var(--theme-color-secondary), var(--transparency-85));
+  --text-secondary-disabled: rgba(var(--theme-color-secondary), var(--transparency-50));
+
+  // onSurface
+  --text-secondary-on-surface: rgba(var(--theme-color-secondary), var(--transparency-87));
+  --text-secondary-on-surface-hovered: rgba(var(--theme-color-secondary), var(--transparency-85));
+  --text-secondary-on-surface-disabled: rgba(var(--theme-color-secondary), var(--transparency-50));
+
+  // Background
+  --bg-secondary: rgb(var(--theme-color-secondary));
+  --bg-secondary-hovered: rgba(var(--theme-color-secondary), var(--transparency-10));
+  --bg-secondary-surface: rgba(var(--theme-color-secondary), var(--transparency-87));
+  --bg-secondary-surface-hovered: rgba(var(--theme-color-secondary), var(--transparency-67));
+  --bg-secondary-surface-disabled: rgba(var(--theme-color-secondary), var(--transparency-47));
+
+  //  ------------------------------------ CONTRAST ------------------------------------
+
+  // Text
+  --text-contrast: rgba(var(--theme-light), var(--transparency-87));
+  --text-contrast-hovered: rgba(var(--theme-light), var(--transparency-75));
+  --text-contrast-disabled: rgba(var(--theme-light), var(--transparency-50));
+
+  // onSurface
+  --text-contrast-on-surface: rgba(var(--theme-dark), var(--transparency-87));
+  --text-contrast-on-surface-hovered: rgba(var(--theme-dark), var(--transparency-75));
+  --text-contrast-on-surface-disabled: rgba(var(--theme-dark), var(--transparency-50));
+
+  // Background
+  --bg-contrast: rgb(var(--theme-dark));
+  --bg-contrast-navbar: rgb(var(--theme-dark-navbar));
+  --bg-contrast-hovered: rgba(var(--theme-light), var(--transparency-6));
+  --bg-contrast-disabled: rgba(var(--theme-light), var(--transparency-50));
+  --bg-contrast-surface: rgba(var(--theme-light), var(--transparency-87));
+  --bg-contrast-surface-hovered: rgba(var(--theme-light), var(--transparency-75));
+  --bg-contrast-surface-disabled: rgba(var(--theme-light), var(--transparency-50));
+}

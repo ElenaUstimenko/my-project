@@ -1,0 +1,8 @@
+// устанавливает значение x 8px
+@function spacing($multiplier) {
+  @if $multiplier > 0 {
+    @return $multiplier * 0.5rem; /* 1 * 8px = 8px */
+  } @else {
+    @return $multiplier * 0.5rem * -1
+  }
+}

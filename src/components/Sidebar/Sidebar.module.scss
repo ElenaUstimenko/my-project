@@ -1,0 +1,25 @@
+.Sidebar {
+  height: calc(100vh - var(--height-navbar));
+  width: var(--width-sidebar);
+  background: var(--bg-contrast);
+  position: relative;
+  transition: all var(--transition-duration) var(--transition-timing-fn);
+}
+
+.collapsedBtn {
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  margin-bottom: 16px;
+}
+
+.collapsed {
+  width: 250px;
+  transition: all var(--transition-duration) var(--transition-timing-fn);
+}
+
+@media screen and (max-width: 350px) {
+  .Sidebar {
+    height: calc(100vh - var(--height-navbar2));
+  }
+}

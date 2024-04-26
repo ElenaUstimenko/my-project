@@ -1,0 +1,16 @@
+@import "reset";
+@import "variables";
+@import "./themes/light";
+@import "./themes/dark";
+
+.app {
+  font: var(--font-m);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  transition: all var(--transition-duration) var(--transition-timing-fn);
+}
+
+.page-content {
+  display: flex;
+}
