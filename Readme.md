@@ -80,7 +80,7 @@
 ✔️ React Testing Library (на примере компонентов AppButton & Sidebar)
 
 
-✔️ Storybook (на примере компонентов AppButton)
+✔️ Storybook (на примере компонента AppButton)
 
 
 ---
