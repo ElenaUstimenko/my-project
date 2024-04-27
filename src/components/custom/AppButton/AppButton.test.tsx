@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import AppButton, { AppButtonSize, AppButtonVariant, ComponentType } from '@components/custom/AppButton/AppButton';
 import { MemoryRouter } from 'react-router-dom';
-
+import getPathIcon from '@components/custom/AppButton/AppButton';
 
 describe('AppButton', () => {
   test('render button', () => {
@@ -85,4 +85,10 @@ describe('AppButton', () => {
     const button = screen.getByTestId('button');
     expect(button).toHaveTextContent('');
   });
+
+  test('getPathIcon returns null for unknown paths', () => {
+    const result = getPathIcon({ isDisabled: true });
+    expect(result).toBeNull();
+  });
+
 });

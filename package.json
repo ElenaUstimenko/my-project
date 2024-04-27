@@ -4,7 +4,7 @@
   "main": "src/index.tsx",
   "scripts": {
     "build:prod": "webpack --env mode=production",
-    "build:dev": "webpack serve --env port=3000",
+    "dev": "webpack serve --env port=3000",
     "eslint": "eslint **/*.{ts,tsx}",
     "eslint:fix": "eslint **/*.{ts,tsx} --fix",
     "stylelint": "stylelint **/*.{css,scss}",

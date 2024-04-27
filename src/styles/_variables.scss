@@ -13,11 +13,9 @@
 
 
   /* Темы */
-  --theme-light: 255, 255, 255;
-  --theme-dark: 0, 0, 0;
+  --theme-light: 169, 169, 169;
+  --theme-dark: 42, 42, 42;
   --theme-color-secondary: 65, 105, 225;
-  --theme-light-navbar: 169, 169, 169;
-  --theme-dark-navbar: 42, 42, 42;
 
   /* Анимация transition: <duration timing-fn> */
   --transition-duration: 0.3s;
@@ -43,5 +41,5 @@
   /* Размеры */
   --height-navbar: 90px;
   --height-navbar2: 110px;
-  --width-sidebar: 70px;
+  --width-sidebar: 46px;
 }

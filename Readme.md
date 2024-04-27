@@ -80,16 +80,13 @@
 ✔️ React Testing Library (на примере компонентов AppButton & Sidebar)
 
 
-✔️ Storybook 
+✔️ Storybook (на примере компонентов AppButton)
 
 
 ---
 
 
 ```что будет добавлено ещё (в процессе):```
-
-
-_CI/CD_
 
 
 _Модальное окно React Portal_
@@ -148,7 +145,7 @@ _Добавление нового поста_
 **Запуск**
 
 
-запуск проекта: ```npm run build:dev```
+запуск проекта: ```npm run dev```
 
 
 _остальные команды в package.json_

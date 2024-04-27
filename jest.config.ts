@@ -4,6 +4,7 @@
  */
 
 import type { Config } from 'jest';
+import path from "path";
 
 const config: Config = {
   // All imported modules in your tests should be mocked automatically
@@ -92,8 +93,15 @@ const config: Config = {
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
     '\\.s?css$': 'identity-obj-proxy',
+    '\\.svg': path.resolve('config/jest/', 'EmptyComponent'),
+    '@assets/(.*)': '<rootDir>src/assets/$1',
+    '@config/(.*)': '<rootDir>config/$1',
     '@components/(.*)': '<rootDir>src/components/$1',
-    '@styles/(.*)': '<rootDir>src/styles/$1',
+    '@context/(.*)': '<rootDir>src/context/$1',
+    '@pages': '<rootDir>src/pages/$1',
+    '@utils/(.*)': '<rootDir>src/utils/$1',
+    '@constants/(.*)': '<rootDir>src/utils/constants/$1',
+    '@hooks/(.*)': '<rootDir>src/utils/hooks/$1',
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

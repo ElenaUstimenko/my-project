@@ -1,7 +1,10 @@
 import { NavLink, NavLinkProps } from 'react-router-dom';
 import { ButtonHTMLAttributes, useMemo } from 'react';
 import cn from 'classnames';
+import MainIcon from '@assets/icons/nav/home.svg';
+import AboutIcon from '@assets/icons/nav/about.svg';
 import styles from './AppButton.module.scss';
+import {AppRoutes, RoutePaths} from "@config/routes/routes.config";
 
 export enum AppButtonVariant {
   TEXT = 'text',
@@ -25,14 +28,22 @@ export enum ComponentType {
 
 type ButtonTypeUnion = ButtonHTMLAttributes<HTMLButtonElement> | NavLinkProps
 
+function getPathIcon(path: string): JSX.Element | null {
+  if (path === RoutePaths[AppRoutes.MAIN]) return <MainIcon />
+  if (path === RoutePaths[AppRoutes.ABOUT]) return <AboutIcon />
+  return null
+};
+
 type AppButtonProps = ButtonTypeUnion & {
   className?: string
   text?: string | JSX.Element
   variant?: AppButtonVariant
   size?: AppButtonSize
   isDisabled?: boolean
+  isTextHidden?: boolean
   onClick?: () => void
   to?: string
+  hasPathIcon?: boolean
   componentType?: ComponentType
 };
 
@@ -43,8 +54,10 @@ type AppButtonProps = ButtonTypeUnion & {
  * @param [variant] - Вариант кнопки
  * @param [size] - Размер
  * @param [isDisabled] - Заблокирована или нет
+ * @param [isTextHidden] - Наличие текста
  * @param [onClick] - Действие при клике
  * @param [to] - Навигация
+ * @param [hasPathIcon] - Если есть иконка для путей
  * @param [componentType] - Тип компонента: кнопка или ссылка
  * @returns {JSX.Element} - Компонент кнопки или ссылки
  */
@@ -57,8 +70,10 @@ function AppButton(props: AppButtonProps) {
     variant = AppButtonVariant.TEXT,
     size = AppButtonSize.M,
     isDisabled = false,
+    isTextHidden = false,
     onClick,
     to,
+    hasPathIcon,
   } = props;
 
   const containerMods = useMemo(() => ({
@@ -109,11 +124,22 @@ function AppButton(props: AppButtonProps) {
           className={cn(styles.AppButtonContainer, containerMods, [styles[size]])}
         >
           <div className={cn(styles.AppButtonStateLayer, [])} />
-          <span
-            className={cn(styles.label, {}, [styles.Text])}
-          >
+          {
+            hasPathIcon && getPathIcon(to) !== null && (
+              <div className={styles.icon}>
+                {getPathIcon(to)}
+              </div>
+            )
+          }
+          {
+            isTextHidden && (
+              <span
+                className={cn(styles.label, {}, [styles.Text])}
+              >
             {text}
           </span>
+            )
+          }
         </div>
       </NavLink>
     );

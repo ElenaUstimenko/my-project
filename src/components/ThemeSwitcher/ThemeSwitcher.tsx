@@ -3,8 +3,8 @@ import cn from 'classnames';
 import useTheme from '@hooks/useTheme';
 import { useMemo } from 'react';
 import { Theme } from '@context/ThemeContext';
-import LightIcon from '@assets/icons/light.svg';
-import DarkIcon from '@assets/icons/dark.svg';
+import LightIcon from '@assets/icons/theme/light.svg';
+import DarkIcon from '@assets/icons/theme/dark.svg';
 import styles from './ThemeSwitcher.module.scss';
 
 enum SwitchIconColor {

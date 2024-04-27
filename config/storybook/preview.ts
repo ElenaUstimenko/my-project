@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react";
 import withStylesDecorator from "@config/storybook/decorators/withStylesDecorator";
 import withThemeDecorator from "@config/storybook/decorators/withThemeDecorator";
+import withRouteDecorator from "@config/storybook/decorators/withRouteDecorator";
 import { Theme } from "@context/ThemeContext";
 
 const preview: Preview = {
@@ -11,6 +12,9 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+    },
+    parameters: {
+      layout: 'centered',
     },
   },
   globalTypes: {
@@ -36,7 +40,8 @@ const preview: Preview = {
   },
   decorators: [
     withStylesDecorator,
-    withThemeDecorator
+    withThemeDecorator,
+    withRouteDecorator,
   ]
 };
 

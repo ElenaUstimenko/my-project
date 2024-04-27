@@ -28,6 +28,8 @@ function Navbar(props: NavbarProps) {
           to={RoutePaths[AppRoutes.MAIN]}
           variant={AppButtonVariant.TEXT_CONTRAST}
           text={t('textBtn1')}
+          isTextHidden={true}
+          hasPathIcon={false}
         />
         <AppButton
           className={cn(styles.btnNavbar)}
@@ -35,6 +37,8 @@ function Navbar(props: NavbarProps) {
           to={RoutePaths[AppRoutes.ABOUT]}
           variant={AppButtonVariant.TEXT_CONTRAST}
           text={t('textBtn2')}
+          isTextHidden={true}
+          hasPathIcon={false}
         />
       </div>
     </div>
