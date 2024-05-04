@@ -83,14 +83,13 @@
 ✔️ Storybook (на примере компонента AppButton)
 
 
+✔️ Модальное окно React Portal
+
 ---
 
 <details><summary><b>что в паланах ещё добавить:</b></summary>
 
 <div>
-
-
-_Модальное окно React Portal_
 
 
 _Redux-Toolkit_

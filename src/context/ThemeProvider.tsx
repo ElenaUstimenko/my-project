@@ -1,4 +1,4 @@
-import {ReactNode, useState} from "react";
+import {ReactNode, useState, useMemo} from "react";
 import {Theme, ThemeContext} from "./ThemeContext";
 import LOCAL_STORAGE_KEYS from "@constants/localStorage";
 
@@ -18,10 +18,13 @@ const ThemeProvider = (props: ThemeProviderProps) => {
 	const [theme, setTheme] = useState(initialTheme || defaultTheme);
 	
 	
-	const defaultValue = {
-		theme: theme,
-		setTheme: setTheme
-	};
+	const defaultValue = useMemo(() => ({
+    theme,
+    setTheme,
+  }), [
+    theme,
+    setTheme,
+  ])
 	
 	return (
 		<ThemeContext.Provider value={defaultValue}>

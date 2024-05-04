@@ -1,0 +1,42 @@
+@import '@styles/functions';
+
+.AppModal {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-index-modal);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--transition-duration) var(--transition-timing-fn);
+  color: var(--text-contrast);
+  font-family: var(--font-family-main);
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: absolute;
+  padding: spacing(2);
+  border-radius: spacing(1);
+  background-color: var(--bg-contrast);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.opened {
+  pointer-events: auto;
+  opacity: 1;
+  transition: opacity var(--transition-duration) var(--transition-timing-fn);
+}
